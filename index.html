@@ -51,8 +51,9 @@
                 const [likes, setLikes] = React.useState(0);
 
                 //The function which is called when the button is clicked
+                //It increases likes by calling setLikes from the state
                 function handleClick(){
-                    console.log("increment like count");
+                    setLikes(likes + 1);
                 }
 
                 return (<div>
@@ -70,7 +71,7 @@
                         ))}
                     </ul>
 
-                    {/*A button with a click event listener*/}
+                    {/*A button with a click event listener the {likes} is 0 from the state*/}
                     <button onClick={handleClick}>Like ({likes})</button>
                 </div>
                 );
