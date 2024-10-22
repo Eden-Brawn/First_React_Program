@@ -46,8 +46,9 @@
                 //An Array
                 const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
 
-                //A state
-                const [] = React.useState();
+                //A state, the first value (likes) is the state value
+                //the second (setLikes) is the update function
+                const [likes, setLikes] = React.useState();
 
                 //The function which is called when the button is clicked
                 function handleClick(){
