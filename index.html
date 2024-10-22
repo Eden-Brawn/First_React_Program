@@ -48,7 +48,7 @@
 
                 //A state, the first value (likes) is the state value
                 //the second (setLikes) is the update function
-                const [likes, setLikes] = React.useState();
+                const [likes, setLikes] = React.useState(0);
 
                 //The function which is called when the button is clicked
                 function handleClick(){
@@ -71,7 +71,7 @@
                     </ul>
 
                     {/*A button with a click event listener*/}
-                    <button onClick={handleClick}>Like</button>
+                    <button onClick={handleClick}>Like ({likes})</button>
                 </div>
                 );
             }
