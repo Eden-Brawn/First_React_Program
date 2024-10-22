@@ -46,6 +46,10 @@
                 //An Array
                 const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
 
+                //A state
+                const [] = React.useState();
+
+                //The function which is called when the button is clicked
                 function handleClick(){
                     console.log("increment like count");
                 }
@@ -64,6 +68,8 @@
                             <li key={name}>{name}</li>
                         ))}
                     </ul>
+
+                    {/*A button with a click event listener*/}
                     <button onClick={handleClick}>Like</button>
                 </div>
                 );
